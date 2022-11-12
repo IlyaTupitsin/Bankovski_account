@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Банковский_акк
+
+class Bankccount
 {
-    internal class BankAccount
+    public long balance;
+
+    public Bankccount()
     {
-        class Bankccount
-        {
-            public long balance;
+        balance = 0;
+    }
 
-            public Bankccount()
-            {
-                balance = 0;
-            }
-
-
-        }
+    void SayBalance(long money , short penny)
+    {
+        Console.WriteLine("На балансе: " + money + " руб. " + penny + "коп." );
     }
 }
+
+        
